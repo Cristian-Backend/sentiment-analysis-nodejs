@@ -42,3 +42,7 @@ Sobre la Carpeta .cache
 La carpeta .cache es donde se almacenan los modelos de aprendizaje automático descargados. Cuando ejecutas el proyecto por primera vez, el modelo Xenova/distilbert-base-uncased-finetuned-sst-2-english se descarga automáticamente en esta carpeta. Esto permite que el modelo esté disponible localmente para su uso sin necesidad de descargarlo nuevamente en futuras ejecuciones.
 
 Es importante tener en cuenta que la carpeta .cache puede contener archivos grandes (como el modelo ONNX), por lo que se recomienda agregarla al archivo .gitignore si se planea evitar subirla a un repositorio remoto.
+
+
+SITIO WEB como se veria la aplicacion
+https://sentiment-analysis-nodejs.onrender.com/
