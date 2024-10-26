@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../public/styles.css">
+    <title>Análisis de Sentimientos</title>
+</head>
+<body>
+    <h1>Análisis de Sentimientos</h1>
+    <form action="/process" method="post">
+        <input type="text" name="text" placeholder="Ingresa un texto">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <% if(result) { %>
+        <div class="result">
+            <p>
+                <span class="resultField">Input:</span>
+                <%= input %>
+            </p>
+            <p>
+                <span class="resultField">Label:</span>
+                <span class="<%= result.label.toLowerCase() === 'positive' ? 'label-positive' : 'label-negative' %>">
+                    <%= result.label %>
+                </span>
+            </p>
+            
+            
+            <p>
+                <span class="resultField">Score:</span>
+                <%= result.score %>
+            </p>
+        </div>
+    <% } %>
+
+</body>
+</html>
